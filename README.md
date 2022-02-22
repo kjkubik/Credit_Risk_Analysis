@@ -5,20 +5,16 @@
 ## Purpose: This analysis is to employ different techniques to train and evaluated models with unbalanced classes to arrive at the best model for evaluating credit risk. Using imbalanced-learn and scikit-learn libraries, I build and evaluate six models:
 
 #### ***Oversampling***
-
 - Naive Random
 - SMOTE
 
 #### ***Undersampling***
-
 - ClusterCentroids
 
 #### ***Over and Under/Combination Sampling***
-
 - SMOTEENN
 
 #### ***Ensemble Learners***
-
 - Random Forest Classifier
 - Adaptive Boosting Classifier
 
@@ -38,10 +34,4 @@
 
 ### Summary:
 
-#### Since we are using these models for loan approvals, sensitivity is more important than precision. That is, it is more important to make sure banks protect themselves (and their potential customers) by not approving loans that will fail. The Adaptive Boosting Classifier model will protect a bank’s brand/reputation. Also, we aren't so concern about precision because, the bank does have the ability to have a loan officer review and approve a loan whose feature's value(s) have been deemed as high-risk.
-
-the recall (sensitivity) for predicting diabetes is much
-
-lower than it is for predicting an absence of diabetes. The lower recall for
-diabetics is reflected in the dropped F1 score as well.
-
+#### Since we are using these models for loan approvals, sensitivity is more important than precision. That is, it is more important to make sure banks protect themselves (and their potential customers) by not approving loans that will fail. The Adaptive Boosting Classifier model will protect a bank’s brand/reputation. Also, we aren't so concern about precision because, the bank has loan officer(s) that can review and approve a loan whose feature's value(s) have been deemed as high-risk.
